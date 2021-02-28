@@ -1,0 +1,32 @@
+$white: #fff;
+$gray-100: hsl(210, 17%, 98%);
+$gray-200: hsl(210, 16%, 90%);
+$gray-300: hsl(213, 14%, 85%);
+$gray-400: hsl(209, 12%, 78%);
+$gray-500: hsl(208, 11%, 71%);
+$gray-600: hsl(240, 6%, 39%);
+$gray-700: hsl(240, 4%, 30%);
+$gray-800: hsl(240, 4%, 19%);
+$gray-900: hsl(240, 3%, 15%);
+$black: #111112;
+
+$light: $gray-100;
+$dark: $gray-900;
+$dark2: mix($black, $dark, 40%);
+$background: $gray-800;
+$background2: mix($dark, $background, 100%);
+$border: $black;
+$border-width: 0;
+
+$body-bg: $background;
+$body-color: $white;
+
+$primary: #f8d12f;
+$secondary: $gray-700;
+$danger: #e0505e;
+$warning: #f8d12f;
+$success: #44ac5a;
+$yellow: #d48609;
+$red: #ce596b;
+
+$link-color: #f8d12f;
