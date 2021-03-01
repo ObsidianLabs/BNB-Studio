@@ -111,14 +111,14 @@ jobs:
           windows_certs_password: ${{ secrets.certs_password }}
           github_token: ${{ github.token }}
 
-      # - name: Create placeholder for COS
-      #   run: echo cos > ./.placeholder
+      - name: Create placeholder for COS
+        run: echo cos > ./.placeholder
 
-      # - name: Upload to COS
-      #   uses: zkqiang/tencent-cos-action@v0.1.0
-      #   with:
-      #     args: upload ./.placeholder / && delete -r -f / && upload -r ./studio/build/ /
-      #     secret_id: ${{ secrets.tencent_cloud_secretid }}
-      #     secret_key: ${{ secrets.tencent_cloud_secretkey }}
-      #     bucket: ${{ secrets.cos_bucket }}
-      #     region: ${{ secrets.cos_region }}
+      - name: Upload to COS
+        uses: zkqiang/tencent-cos-action@v0.1.0
+        with:
+          args: upload ./.placeholder / && delete -r -f / && upload -r ./studio/build/ /
+          secret_id: ${{ secrets.tencent_cloud_secretid }}
+          secret_key: ${{ secrets.tencent_cloud_secretkey }}
+          bucket: ${{ secrets.cos_bucket }}
+          region: ${{ secrets.cos_region }}
