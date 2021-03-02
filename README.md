@@ -2,7 +2,7 @@
 
 BSC Studio 是一个帮助开发者快速开发 BSC 智能合约的集成化开发环境。
 
-![](./screenshots/compile.png)
+![](./screenshots/main.png)
 
 ## 安装
 
