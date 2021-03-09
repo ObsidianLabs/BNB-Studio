@@ -17,13 +17,14 @@ if (platform.isDesktop) {
     'newFile',
     'newFolder',
     'save',
+    'saveAll',
     'openTerminal',
     'redo',
     'undo',
     'delete',
     'selectAll',
   ]
-  
+
   actions.forEach(action => {
     handlers.project[action] = projectActions[action].bind(projectActions)
   })
@@ -37,6 +38,5 @@ if (platform.isDesktop) {
     }
   })
 }
-
 
 export default handlers

@@ -56,25 +56,15 @@ module.exports = function createMenu () {
       },
       {
         label: 'New Folder...',
-        accelerator: 'CmdOrCtrl+Shift+N',
+        accelerator: 'CmdOrCtrl+Option+N',
         click: () => ipc.send('menu-click', 'project.newFolder')
       },
-      // {
-      //   label: 'Open...',
-      //   accelerator: 'CmdOrCtrl+O',
-      //   click: () => ipc.send('menu-click', 'project.open')
-      // },
       { type: 'separator' },
       {
         label: 'Save',
         accelerator: 'CmdOrCtrl+S',
         click: () => ipc.send('menu-click', 'project.save')
       },
-      // {
-      //   label: 'Save As...',
-      //   accelerator: 'CmdOrCtrl+Shift+S',
-      //   click: () => ipc.send('menu-click', 'project.saveAs')
-      // },
       {
         label: 'Save All',
         accelerator: 'CmdOrCtrl+Option+S',
@@ -115,7 +105,6 @@ module.exports = function createMenu () {
   const view = {
     label: 'View',
     submenu: [
-      // { label: 'Show Command Palette', accelerator: 'CmdOrCtrl+Shift+P', click: () => ipc.send('menu-click', 'help.quickCommand') },
       { label: 'Open Console', accelerator: 'Ctrl+`', click: () => ipc.send('menu-click', 'project.openTerminal') },
       { type: 'separator' },
       { label: 'Increase Font Size', role: 'zoomin' },
@@ -124,12 +113,6 @@ module.exports = function createMenu () {
     ]
   }
 
-  const help = {
-    label: 'Help',
-    submenu: [
-      { label: `BSC Studio Telegram Group`, click: () => shell.openExternal('https://t.me') },
-    ]
-  }
 
   const debug = {
     label: 'Debug',
@@ -143,7 +126,6 @@ module.exports = function createMenu () {
     file,
     edit,
     view,
-    help
   ]
 
   if (os.type() === 'Darwin') {
