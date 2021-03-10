@@ -52,7 +52,7 @@ After entering the main interface, users need to create some keypairs by opening
   <img src="./screenshots/keypairs.png" width="720px">
 </p>
 
-Users can create, import and manage keypairs in the keypair manager. When creating and editing a keypair, users can set an alias for the keypair to facilitate identification in later use. Besides storing and managing keypairs, the keypair manager will also provide a genesis address for the genesis block. When creating a new BSC node instance, all addresses in the keypair manager will be regarded as genesis addresses, and each address will get a total of 10,000 initial CFX tokens.
+Users can create, import and manage keypairs in the keypair manager. When creating and editing a keypair, users can set an alias for the keypair to facilitate identification in later use. Besides storing and managing keypairs, the keypair manager will also provide a genesis address for the genesis block. When creating a new BSC node instance, all addresses in the keypair manager will be regarded as genesis addresses.
 
 **Before the following steps, users need to create some keypairs in the key manager as the genesis address for creating node instances.**
 
