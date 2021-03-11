@@ -186,8 +186,8 @@ jobs:
           github_token: ${{ github.token }}
 
       - name: Clean up Build assets
-         working-directory: ./studio/dist
-         run: rm builder-debug.yml
+        working-directory: ./studio/dist
+        run: rm builder-debug.yml
 
       - name: Upload assets
         uses: AButler/upload-release-assets@v2.0
