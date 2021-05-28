@@ -1,7 +1,7 @@
 {
   "name": "bsc-studio",
   "description": "Graphic IDE for BSC smart contract development",
-  "version": "0.1.0-rc.1",
+  "version": "0.3.1",
   "author": {
     "name": "Phil Li",
     "email": "phil.li@obsidians.io",
@@ -41,7 +41,7 @@
     "monaco-ace-tokenizer": "^0.2.1",
     "node-pty": "0.10.0",
     "prettier": "^2.2.1",
-    "prettier-plugin-solidity": "^1.0.0-beta.5",
+    "prettier-plugin-solidity": "1.0.0-beta.10",
     "socket.io-client": "^2.4.0",
     "strip-ansi": "^6.0.0",
     "trash": "^7.0.0"
@@ -137,9 +137,8 @@
       "appId": "com.obsidians.bscstudio",
       "category": "developer-tools",
       "target": {
-        "target": "dmg",
+        "target": "default",
         "arch": [
-          "arm64",
           "x64"
         ]
       }
