@@ -16,6 +16,8 @@ Input.defaultProps = {
   spellCheck: 'false'
 }
 
+NewProjectModal.defaultProps.templates.splice(2, 1, { id: 'math', display: 'BEP20 & NFT from mathwallet' })
+
 const UserHomepage = lazy(() => import('./UserHomepage' /* webpackChunkName: "tabs" */))
 const Project = lazy(() => import('./Project' /* webpackChunkName: "tabs" */))
 const Contract = lazy(() => import('./Contract' /* webpackChunkName: "tabs" */))

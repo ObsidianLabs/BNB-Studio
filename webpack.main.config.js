@@ -54,6 +54,10 @@ module.exports = merge.smart(baseConfig, {
   plugins: [
     new CopyPlugin([
       {
+        from: 'node_modules/@obsidians/bsc-project/main/templates',
+        to: 'templates'
+      },
+      {
         from: 'node_modules/@obsidians/eth-project/main/templates',
         to: 'templates'
       },
