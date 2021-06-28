@@ -91,7 +91,7 @@ const overrides = [
     COMPILER_VERSION_KEY: '"truffle"',
     DOCKER_IMAGE_NODE: '"obsidians/bsc"',
     DOCKER_IMAGE_COMPILER: '"obsidians/truffle"',
-    // ENABLE_AUTH: true,
+    ENABLE_AUTH: true,
   }),
   turnOffMangle(),
   addWasmLoader(),
