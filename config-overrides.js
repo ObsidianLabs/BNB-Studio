@@ -84,7 +84,7 @@ const overrides = [
     CHAIN_SHORT_NAME: '"BSC"',
     CHAIN_EXECUTABLE_NAME: '"BSC Node"',
     CHAIN_EXECUTABLE_NAME_IN_LABEL: '"BSC node"',
-    TOKEN_SYMBOL: '"BNB"',
+    TOKEN_SYMBOL: 'function () { return "BNB" }',
     COMPILER_NAME: '"Truffle"',
     COMPILER_NAME_IN_LABEL: '"Truffle"',
     COMPILER_EXECUTABLE_NAME: '"truffle"',
