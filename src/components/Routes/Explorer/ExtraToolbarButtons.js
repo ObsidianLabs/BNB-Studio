@@ -13,7 +13,7 @@ export default class FaucetButton extends PureComponent {
   }
 
   render () {
-    if (this.props.network !== 'testnet') {
+    if (this.props.network !== 'bsn-testnet') {
       return null
     }
     return (
