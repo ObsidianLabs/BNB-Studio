@@ -65,9 +65,9 @@ const overrides = [
     '@obsidians/project': `@obsidians/${process.env.BUILD}-project`,
     '@obsidians/contract': `@obsidians/${process.env.BUILD}-contract`,
     '@obsidians/explorer': `@obsidians/${process.env.BUILD}-explorer`,
-    '@obsidians/sdk': `@obsidians/${process.env.PROJECT}-sdk`,
     '@obsidians/network': `@obsidians/${process.env.BUILD}-network`,
     '@obsidians/node': `@obsidians/${process.env.BUILD}-node`,
+    '@obsidians/premium-editor': path.resolve(__dirname, process.env.PREMIUM_EDITOR || 'empty.js'),
   }),
   overrideProcessEnv({
     CDN: JSON.stringify(!!process.env.CDN),
@@ -84,7 +84,6 @@ const overrides = [
     CHAIN_SHORT_NAME: '"BSC"',
     CHAIN_EXECUTABLE_NAME: '"BSC Node"',
     CHAIN_EXECUTABLE_NAME_IN_LABEL: '"BSC node"',
-    TOKEN_SYMBOL: 'function () { return "BNB" }',
     COMPILER_NAME: '"Truffle"',
     COMPILER_NAME_IN_LABEL: '"Truffle"',
     COMPILER_EXECUTABLE_NAME: '"truffle"',
