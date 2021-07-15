@@ -5,11 +5,13 @@ import { connect } from '@obsidians/redux'
 import headerActions, { Header, NavGuard } from '@obsidians/header'
 import { networkManager } from '@obsidians/network'
 import { actions } from '@obsidians/workspace'
+import keypairManager from '@obsidians/keypair'
 
 import { List } from 'immutable'
 
-import BscSdk from '@obsidians/bsc-sdk'
+import BscSdk, { kp } from '@obsidians/bsc-sdk'
 
+keypairManager.kp = kp
 networkManager.addSdk(BscSdk, BscSdk.networks)
 
 class HeaderWithRedux extends PureComponent {
