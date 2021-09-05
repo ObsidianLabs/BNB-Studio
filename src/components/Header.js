@@ -9,9 +9,9 @@ import keypairManager from '@obsidians/keypair'
 
 import { List } from 'immutable'
 
-import BscSdk, { kp } from '@obsidians/bsc-sdk'
+import BscSdk from '@obsidians/bsc-sdk'
 
-keypairManager.kp = kp
+keypairManager.kp = BscSdk.kp
 networkManager.addSdk(BscSdk, BscSdk.networks)
 
 class HeaderWithRedux extends PureComponent {
@@ -24,7 +24,7 @@ class HeaderWithRedux extends PureComponent {
     headerActions.history = this.props.history
     this.setState({ networkList: List(networkManager.networks) }, this.setNetwork)
     if (!networkManager.network) {
-      networkManager.setNetwork(networkManager.networks[0])
+      networkManager.setNetwork(networkManager.networks[0], { notify: false })
     }
     this.navGuard = new NavGuard(this.props.history)
   }
@@ -64,7 +64,7 @@ class HeaderWithRedux extends PureComponent {
     return (
       <Header
         profile={profile}
-        projects={projects.get('local').toJS()}
+        projects={projects}
         selectedProject={selectedProject}
         selectedContract={selectedContract}
         selectedAccount={selectedAccount}

@@ -14,6 +14,7 @@ module.exports = merge.smart(baseConfig, {
   output: {
     path: path.resolve(__dirname, 'dev')
   },
+  resolve: { mainFields: ['main', 'module'] },
   module: {
     rules: [
       {
@@ -77,6 +78,7 @@ module.exports = merge.smart(baseConfig, {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
       'process.env.BUILD': JSON.stringify(process.env.BUILD),
       'process.env.PROJECT': JSON.stringify(process.env.PROJECT || process.env.BUILD),
+      'process.env.SERVER_URL': JSON.stringify(process.env.REACT_APP_SERVER_URL),
       'process.env.DOCKER_IMAGE_NODE': '"obsidians/bsc"',
       'process.env.DOCKER_IMAGE_COMPILER': '"obsidians/truffle"',
     })
