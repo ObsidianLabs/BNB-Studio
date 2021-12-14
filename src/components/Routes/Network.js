@@ -11,7 +11,7 @@ nodeManager.generateCommand = ({ name, version }) => {
     `-v ${process.env.PROJECT}-${name}:/data`,
     `-w /data`,
     `${process.env.DOCKER_IMAGE_NODE}:${version}`,
-    `--datadir=/data --rpcaddr=0.0.0.0 --rpcport=8575`
+    `--datadir=/data --networkid 1000 --mine --nousb --rpc --rpcaddr=0.0.0.0 --rpcport=8575`
   ].join(' ')
 }
 
