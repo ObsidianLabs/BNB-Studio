@@ -1,47 +1,47 @@
-# BSC Studio
+# BNB Studio
 
-BSC Studio 是一个帮助开发者快速开发 BSC 智能合约的集成化开发环境。
+BNB Studio 是一个帮助开发者快速开发 BNB 智能合约的集成化开发环境。
 
 ![](./screenshots/main.png)
 
-[English](https://github.com/ObsidianLabs/BSC-Studio/blob/master/README.md) | 简体中文
+[English](https://github.com/ObsidianLabs/BNB-Studio/blob/master/README.md) | 简体中文
 ## 安装
 
 ### 下载
 
-BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/BSC-Studio/releases) 进行下载。目前 BSC Studio 支持 macOS, Linux 和 Windows 系统，请根据系统下载对应的版本 (macOS 下载 .dmg 或者 .zip，Linux 下载 .AppImage, Windows 下载 .exe)。
+BNB Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/BNB-Studio/releases) 进行下载。目前 BNB Studio 支持 macOS, Linux 和 Windows 系统，请根据系统下载对应的版本 (macOS 下载 .dmg 或者 .zip，Linux 下载 .AppImage, Windows 下载 .exe)。
 
 ### 安装
 
-- **macOS**: 双击打开 `BSC-Studio-x.x.x.dmg` 并将 `BSC Studio` 拖动到应用文件夹内。
-- **Linux**: 双击打开 `BSC-Studio-x.x.x.AppImage`, 选择 *Properties* => *Permissions* => *Execute*, 将 *Allow executing file as progrom* 选项打勾。关闭属性设置窗口并双击打开应用（不同的 Linux 发行版可能会有不同的安装方式）。
-- **Windows**:  双击打开 `BSC-Studio-x.x.x.exe`。
+- **macOS**: 双击打开 `BNB-Studio-x.x.x.dmg` 并将 `BNB Studio` 拖动到应用文件夹内。
+- **Linux**: 双击打开 `BNB-Studio-x.x.x.AppImage`, 选择 *Properties* => *Permissions* => *Execute*, 将 *Allow executing file as progrom* 选项打勾。关闭属性设置窗口并双击打开应用（不同的 Linux 发行版可能会有不同的安装方式）。
+- **Windows**:  双击打开 `BNB-Studio-x.x.x.exe`。
 
 ## 功能预览
 
 ### 准备工作
 
-在正确安装 BSC Studio 并初次启动时，你将看到一个欢迎页面，这里有 BSC Studio 正常运行所需要的依赖，包括了 Docker，Ethereum Node 以及 BSC Truffle
+在正确安装 BNB Studio 并初次启动时，你将看到一个欢迎页面，这里有 BNB Studio 正常运行所需要的依赖，包括了 Docker，Ethereum Node 以及 BNB Truffle
 
 <p align="center">
   <img src="./screenshots/welcome.png" width="720px">
 </p>
 
-- BSC Studio 使用 [**Docker**](https://www.docker.com/) 来启动 BSC 节点和进行项目编译。如果你之前没有安装过 Docker，可以点击 *Install Docker* 按钮访问 Docker 官方网站并进行下载安装。
-- [**BSC Node in Docker**](https://hub.docker.com/repository/docker/obsidians/bsc) BSC 节点镜像，BSC Studio 使用这个镜像来运行 BSC 节点以及项目编译
-- [**Truffle in Docker**](https://hub.docker.com/repository/docker/obsidians/truffle) BSC Studio 使用这个工具包进行项目的创建和编译。
+- BNB Studio 使用 [**Docker**](https://www.docker.com/) 来启动 BNB 节点和进行项目编译。如果你之前没有安装过 Docker，可以点击 *Install Docker* 按钮访问 Docker 官方网站并进行下载安装。
+- [**BNB Node in Docker**](https://hub.docker.com/repository/docker/obsidians/bsc) BNB 节点镜像，BNB Studio 使用这个镜像来运行 BNB 节点以及项目编译
+- [**Truffle in Docker**](https://hub.docker.com/repository/docker/obsidians/truffle) BNB Studio 使用这个工具包进行项目的创建和编译。
 
-当所有依赖都正确安装并运行后，灰色的 *Skip* 按钮将会变成绿色的 *Get Started* 按钮。点击这个按钮进入 BSC Studio 的主界面。
+当所有依赖都正确安装并运行后，灰色的 *Skip* 按钮将会变成绿色的 *Get Started* 按钮。点击这个按钮进入 BNB Studio 的主界面。
 
 ### 创建密钥对
 
-进入主界面后，我们需要首先创建一些密钥对。在 BSC Studio 的任意界面，点击应用左下⻆的钥匙图标，打开密钥管理器。
+进入主界面后，我们需要首先创建一些密钥对。在 BNB Studio 的任意界面，点击应用左下⻆的钥匙图标，打开密钥管理器。
 
 <p align="center">
   <img src="./screenshots/keypairs.png" width="480px">
 </p>
 
-你可以在密钥管理器中创建、导入并管理密钥对。在创建和编辑密钥对的时候，你可以为该密钥对设置别名，方便在后续的使用中进行识别。密钥管理器除了对密钥对进行储存管理外，还将为创世区块提供创世地址。创建新的 BSC 节点实例时，BSC Studio 会使用密钥管理器里的地址作为创世地址。
+你可以在密钥管理器中创建、导入并管理密钥对。在创建和编辑密钥对的时候，你可以为该密钥对设置别名，方便在后续的使用中进行识别。密钥管理器除了对密钥对进行储存管理外，还将为创世区块提供创世地址。创建新的 BNB 节点实例时，BNB Studio 会使用密钥管理器里的地址作为创世地址。
 
 **在继续之前，请先在密钥管理器中创建一些密钥对，作为接下来创建节点实例的创世地址。**
 
@@ -66,11 +66,11 @@ BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/
 
 ### Faucet
 
-在区块链的世界中，大家通常将申请测试 Token 的方式称为 faucet，BSC Studio 为不同的测试网络提供便捷的 faucet 入口。切换至不同网络，点击地址栏旁的水龙头按钮将在浏览器中打开当前测试网的 facuet 页面。
+在区块链的世界中，大家通常将申请测试 Token 的方式称为 faucet，BNB Studio 为不同的测试网络提供便捷的 faucet 入口。切换至不同网络，点击地址栏旁的水龙头按钮将在浏览器中打开当前测试网的 facuet 页面。
 
 ### 创建智能合约项目
 
-点击顶部的 *Project* 标签，主页面将切换至项目管理器。点击页面右上角的 *New* 按钮打开创建项目弹窗，输入项目名称并选择合适的模版，BSC Studio 目前提供了三个模版：
+点击顶部的 *Project* 标签，主页面将切换至项目管理器。点击页面右上角的 *New* 按钮打开创建项目弹窗，输入项目名称并选择合适的模版，BNB Studio 目前提供了三个模版：
 
 - `Coin`
 - `Open Zeppelin`
@@ -86,7 +86,7 @@ BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/
 
 ### 编译智能合约项目
 
-点击工具栏的编译按钮（锤子形状），BSC Studio 将进行项目的编译，你可以通过下方的日志查看器来查看编译结果。编译后将在项目目录下的 `build` 文件夹中生成 json 文件。
+点击工具栏的编译按钮（锤子形状），BNB Studio 将进行项目的编译，你可以通过下方的日志查看器来查看编译结果。编译后将在项目目录下的 `build` 文件夹中生成 json 文件。
 
 <p align="center">
   <img src="./screenshots/compile.png" width="720px">
@@ -94,13 +94,13 @@ BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/
 
 ### 部署智能合约项目
 
-点击工具栏的部署按钮（船形状），部署参数窗口将被打开，在这里可以输入构造函数的参数、交易签名者、gas limit 和 gas price。BSC Studio 提供估算 Gas Limit 功能，点击 *Estimate Gas* 将会自动在 Gas Limit 中填入合适的值。
+点击工具栏的部署按钮（船形状），部署参数窗口将被打开，在这里可以输入构造函数的参数、交易签名者、gas limit 和 gas price。BNB Studio 提供估算 Gas Limit 功能，点击 *Estimate Gas* 将会自动在 Gas Limit 中填入合适的值。
 
 <p align="center">
   <img src="./screenshots/deploy_parameters.png" width="720px">
 </p>
 
-点击 *Deploy* 按钮 BSC Studio 将进行项目部署，部署结果将会弹窗显示。
+点击 *Deploy* 按钮 BNB Studio 将进行项目部署，部署结果将会弹窗显示。
 
 <p align="center">
   <img src="./screenshots/deploy.png" width="720px">
@@ -108,7 +108,7 @@ BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/
 
 ### 调用合约
 
-成功部署智能合约后，点击弹窗中点击 *Contract* 旁的地址，主页面将切换至合约浏览器，BSC Studio 将自动打开刚才部署完成的智能合约。
+成功部署智能合约后，点击弹窗中点击 *Contract* 旁的地址，主页面将切换至合约浏览器，BNB Studio 将自动打开刚才部署完成的智能合约。
 
 合约浏览器页面主要分为三个部分：
 
@@ -116,7 +116,7 @@ BSC Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/
 - 中间为合约的数据读取，点击中间部分的左上角蓝色按钮弹出的下拉框显示当前合约的数据表，点击表名称可以切换查看不同表中的数据。
 - 右边为合约的事件读取，点击右边部分的左上角蓝色按钮弹出的下拉框显示当前事件，点击事件名称可以切换查看的事件。
 
-BSC Studio 会自动读取合约 ABI 中的 functions，并为每个 function 生成参数表单。用户可以简单的选择要调用的 function，输入参数，选择签名者（需要为 keypair manager 中存在的地址；读操作不需选择），并点击运行按钮进行合约调用。调用结果（成功或失败）将显示在下方的 result 栏中。
+BNB Studio 会自动读取合约 ABI 中的 functions，并为每个 function 生成参数表单。用户可以简单的选择要调用的 function，输入参数，选择签名者（需要为 keypair manager 中存在的地址；读操作不需选择），并点击运行按钮进行合约调用。调用结果（成功或失败）将显示在下方的 result 栏中。
 
 接下来我们使用部署好的合约创建 *Coin*。选择 *mint* 方法，在 *Parameters* 下填入 *receiver* 地址（可以从密钥管理器中复制）和在 *amount* 中填入合适的数量，在 *Authorization* 中填入创世地址，点击上方的执行按钮。完成交易后，我们可以在左下角的 *Result* 中看到成功执行的结果。此时我们已经创建了新的 *Coin*。
 

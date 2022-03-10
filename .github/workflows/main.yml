@@ -13,7 +13,7 @@ env:
   eth_components: eth-components
   project_build: eth
   project_project: bsc
-  project_name: BSC Studio
+  project_name: BNB Studio
   project_build_script: yarn && yarn dist
   os_matrix: '[\"macos-latest\", \"ubuntu-18.04\", \"windows-2019\"]'
   enable_auth: false

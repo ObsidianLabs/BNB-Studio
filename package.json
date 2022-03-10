@@ -1,6 +1,6 @@
 {
   "name": "bsc-studio",
-  "description": "Graphic IDE for BSC smart contract development",
+  "description": "Graphic IDE for BNB smart contract development",
   "version": "0.10.4",
   "author": {
     "name": "Phil Li",
@@ -122,8 +122,8 @@
     ]
   },
   "build": {
-    "productName": "BSC Studio",
-    "artifactName": "BSC-Studio-${version}.${ext}",
+    "productName": "BNB Studio",
+    "artifactName": "BNB-Studio-${version}.${ext}",
     "files": [
       "build/**/*",
       "node_modules/**/*"
