@@ -6,6 +6,7 @@ export { redux as keypairs } from '@obsidians/keypair'
 export { redux as tokens } from '@obsidians/explorer'
 export { redux as abis } from '@obsidians/eth-sdk'
 export { redux as queue } from '@obsidians/queue'
+export { redux as customNetworks } from '@obsidians/eth-network'
 
 export const version = {
   default: Immutable.fromJS({}),
