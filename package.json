@@ -1,6 +1,6 @@
 {
   "name": "bsc-studio",
-  "description": "Graphic IDE for BSC smart contract development",
+  "description": "Graphic IDE for BNB smart contract development",
   "version": "0.10.4",
   "author": {
     "name": "Phil Li",
@@ -100,7 +100,8 @@
   "resolutions": {
     "@solidity-parser/parser": "^0.12.1",
     "node-abi": "3.5.0",
-    "sass-loader": "10.2.0"
+    "sass-loader": "10.2.0",
+    "react-highlight": "^0.13.0"
   },
   "workspaces": [
     "../electron-components/packages/*",
@@ -121,8 +122,8 @@
     ]
   },
   "build": {
-    "productName": "BSC Studio",
-    "artifactName": "BSC-Studio-${version}.${ext}",
+    "productName": "BNB Studio",
+    "artifactName": "BNB-Studio-${version}.${ext}",
     "files": [
       "build/**/*",
       "node_modules/**/*"
