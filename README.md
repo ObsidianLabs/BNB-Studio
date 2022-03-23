@@ -4,13 +4,13 @@ BNB Studio is an integrated development environment (IDE), making developing BNB
 
 ![](./screenshots/compile.png)
 
-English | [简体中文](https://github.com/ObsidianLabs/BNB-Studio/blob/master/README-CN.md)
+English | [简体中文](./README-CN.md)
 
 ## Installation
 
 ### Download
 
-Download BNB Studio install-package in [Github Release](https://github.com/ObsidianLabs/BNB-Studio/releases) according to the computer system type (.dmg/.zip for macOS, .AppImage for Linux, .exe for Windows).
+Download BNB Studio install-package in [Github Release](https://github.com/ObsidianLabs/BSC-Studio/releases) according to the computer system type (.dmg/.zip for macOS, .AppImage for Linux, .exe for Windows).
 
 ### Install
 

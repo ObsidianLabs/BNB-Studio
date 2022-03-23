@@ -4,12 +4,12 @@ BNB Studio 是一个帮助开发者快速开发 BNB 智能合约的集成化开�
 
 ![](./screenshots/main.png)
 
-[English](https://github.com/ObsidianLabs/BNB-Studio/blob/master/README.md) | 简体中文
+[English](./README.md) | 简体中文
 ## 安装
 
 ### 下载
 
-BNB Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/BNB-Studio/releases) 进行下载。目前 BNB Studio 支持 macOS, Linux 和 Windows 系统，请根据系统下载对应的版本 (macOS 下载 .dmg 或者 .zip，Linux 下载 .AppImage, Windows 下载 .exe)。
+BNB Studio 安装包可以在 [Github Releases](https://github.com/ObsidianLabs/BSC-Studio/releases) 进行下载。目前 BNB Studio 支持 macOS, Linux 和 Windows 系统，请根据系统下载对应的版本 (macOS 下载 .dmg 或者 .zip，Linux 下载 .AppImage, Windows 下载 .exe)。
 
 ### 安装
 
