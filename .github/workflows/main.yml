@@ -1,8 +1,9 @@
 name: Build Main
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - 'v*'
 
   workflow_dispatch:
 
@@ -18,6 +19,7 @@ env:
   os_matrix: '[\"macos-latest\", \"ubuntu-18.04\", \"windows-2019\"]'
   enable_auth: false
   premium_editor: ../premium-editor
+  GH_TOKEN: ${{ secrets.obsidians_token }}
 
 jobs:
   # Generate matrix for the following steps
@@ -203,13 +205,3 @@ jobs:
           react_app_mixpanel_token: ${{ secrets.react_app_mixpanel_token }}
           premium_editor: ${{ env.premium_editor }}
           github_token: ${{ github.token }}
-
-      - name: Clean up Build assets
-        working-directory: ./studio/dist
-        run: rm builder-debug.yml
-
-      - name: Upload assets
-        uses: AButler/upload-release-assets@v2.0
-        with:
-          files: 'studio/dist/*.(dmg|zip|exe|AppImage|yml)'
-          repo-token: ${{ github.token }}
