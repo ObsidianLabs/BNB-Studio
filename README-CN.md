@@ -4,7 +4,7 @@ BNB Studio 是一个帮助开发者快速开发 BNB 智能合约的集成化开�
 
 ![](./screenshots/main.png)
 
-[English](https://github.com/ObsidianLabs/BNB-Studio/blob/master/README.md) | 简体中文
+[English](./README.md) | 简体中文
 ## 安装
 
 ### 下载

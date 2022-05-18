@@ -4,7 +4,7 @@ BNB Studio is an integrated development environment (IDE), making developing BNB
 
 ![](./screenshots/compile.png)
 
-English | [简体中文](https://github.com/ObsidianLabs/BNB-Studio/blob/master/README-CN.md)
+English | [简体中文](./README-CN.md)
 
 ## Installation
 
