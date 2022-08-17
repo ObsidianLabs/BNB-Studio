@@ -10,9 +10,9 @@ English | [简体中文](https://github.com/ObsidianLabs/BNB-Studio/blob/master/
 
 ### Download
 
-Download BNB Studio install-package in [Github Release](https://github.com/ObsidianLabs/BNB-Studio/releases) according to the computer system type (.dmg/.zip for macOS, .AppImage for Linux, .exe for Windows).
+Download BNB Studio install-package in [Github Release](https://github.com/ObsidianLabs/BSC-Studio/releases) according to the computer system type (.dmg/.zip for macOS, .AppImage for Linux, .exe for Windows).
 
-### Install
+### Install  
 
 - **macOS**: Double click to open `BNB-Studio-x.x.x.dmg` and drag `BNB Studio` to the application folder.
 - **Linux**: Double-click to open `BNB-Studio-x.x.x.AppImage`, select *Properties* => *Permissions* => *Execute*, and tick the *Allow executing file as progrom* option. Close the properties window and double-click to open the application (different Linux distributions may have different installation methods).
